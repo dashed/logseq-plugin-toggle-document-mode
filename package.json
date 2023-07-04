@@ -1,4 +1,21 @@
 {
   "name": "logseq-plugin-toggle-document-mode",
-  "packageManager": "yarn@3.3.0"
+  "version": "0.0.1",
+  "packageManager": "yarn@3.3.0",
+  "type": "module",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "rollup --config",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@logseq/libs": "^0.0.15"
+  },
+  "devDependencies": {
+    "@rollup/plugin-html": "^1.0.2",
+    "@swc/core": "^1.3.67",
+    "rollup": "^3.26.0",
+    "rollup-plugin-swc3": "^0.8.2",
+    "typescript": "^5.1.6"
+  }
 }
