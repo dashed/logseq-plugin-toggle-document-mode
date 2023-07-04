@@ -1,6 +1,7 @@
 import { defineRollupSwcOption, swc } from "rollup-plugin-swc3";
 import html from "@rollup/plugin-html";
 import { readFile } from "fs/promises";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 export default {
   input: "src/index.tsx",
@@ -22,6 +23,7 @@ export default {
           .replace("{js}", `<script type="module" src="${fileName}"></script>`);
       },
     }),
+    nodeResolve(),
     swc(
       defineRollupSwcOption({
         jsc: {
