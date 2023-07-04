@@ -6,7 +6,8 @@
   "main": "dist/index.html",
   "logseq": {
     "id": "logseq-plugin-toggle-document-mode",
-    "title": "Toggle document mode"
+    "title": "Toolbar button to toggle document mode",
+    "icon": "plugin-icon.svg"
   },
   "scripts": {
     "build": "rollup --config",
